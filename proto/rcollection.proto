@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package rcollection;
+
+option go_package = "github.com/brotherlogic/rcollection/proto";
+
+message Config {
+    int32 user_id = 1;
+    
+    string token = 2;
+    int64 token_refresh_date = 3;
+}
